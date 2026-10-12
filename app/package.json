@@ -1,0 +1,20 @@
+{
+  "name": "learnersforge",
+  "version": "1.0.0",
+  "main": "expo-router/entry",
+  "dependencies": {
+    "expo": "~57.0.27",
+    "expo-router": "~5.1.0",
+    "expo-status-bar": "~57.0.1",
+    "react": "19.2.3",
+    "react-native": "0.86.3"
+  },
+  "scripts": {
+    "start": "node node_modules/expo/bin/cli start --lan --port 8082",
+    "android": "node node_modules/expo/bin/cli start --android --port 8082",
+    "ios": "node node_modules/expo/bin/cli start --ios --port 8082",
+    "web": "node node_modules/expo/bin/cli start --web --port 8082",
+    "test": "node test-client.mjs"
+  },
+  "private": true
+}

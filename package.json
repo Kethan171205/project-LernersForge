@@ -1,0 +1,16 @@
+{
+  "name": "learnersforge-monorepo",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Learner's Forge monorepo test runners",
+  "scripts": {
+    "test": "npm run test:backend && npm run test:app",
+    "test:backend": "npm --prefix backend test",
+    "test:unit": "npm --prefix backend run test:unit",
+    "test:integration": "npm --prefix backend run test:integration",
+    "test:pipeline": "node backend/test-pipeline.js",
+    "test:phase4": "node backend/test-phase4.js",
+    "test:app": "npm --prefix app test",
+    "test:all": "npm run test:unit && npm run test:integration && npm run test:pipeline && npm run test:phase4 && npm run test:app"
+  }
+}
